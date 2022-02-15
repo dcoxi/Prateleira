@@ -1,0 +1,2 @@
+﻿Para uso do swagger na aplicação, instalar o plugin:
+ - Swashbuckle.AspNetCore
