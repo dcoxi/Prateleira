@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prateleira.Api", "src\Prateleira.Api\Prateleira.Api.csproj", "{19E048DA-4E06-4D5E-B277-0E7A20D926B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prateleira.Api", "src\Prateleira.Api\Prateleira.Api.csproj", "{19E048DA-4E06-4D5E-B277-0E7A20D926B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prateleira.Domain", "src\Prateleira.Domain\Prateleira.Domain.csproj", "{509C4199-3207-43E2-ABA7-FFAB6276C80A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prateleira.Domain", "src\Prateleira.Domain\Prateleira.Domain.csproj", "{509C4199-3207-43E2-ABA7-FFAB6276C80A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pratelerira.Infrastructure.Data", "src\Pratelerira.Infrastructure.Data\Pratelerira.Infrastructure.Data.csproj", "{F164D5FE-F9CA-4C55-A91F-1F45FC7341DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pratelerira.Infrastructure.Data", "src\Pratelerira.Infrastructure.Data\Pratelerira.Infrastructure.Data.csproj", "{F164D5FE-F9CA-4C55-A91F-1F45FC7341DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prateleira.Application", "src\Prateleira.Application\Prateleira.Application.csproj", "{288DA0EE-6ACC-49A2-B24E-8AAD8DC9D43C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F164D5FE-F9CA-4C55-A91F-1F45FC7341DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F164D5FE-F9CA-4C55-A91F-1F45FC7341DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F164D5FE-F9CA-4C55-A91F-1F45FC7341DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288DA0EE-6ACC-49A2-B24E-8AAD8DC9D43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288DA0EE-6ACC-49A2-B24E-8AAD8DC9D43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288DA0EE-6ACC-49A2-B24E-8AAD8DC9D43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288DA0EE-6ACC-49A2-B24E-8AAD8DC9D43C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

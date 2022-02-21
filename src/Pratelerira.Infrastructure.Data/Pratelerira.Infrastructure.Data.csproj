@@ -13,4 +13,19 @@
     <ProjectReference Include="..\Prateleira.Domain\Prateleira.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Mensagens\MsgCategoria.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MsgCategoria.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Mensagens\MsgCategoria.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MsgCategoria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

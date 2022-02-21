@@ -9,7 +9,7 @@ namespace Prateleira.Domain.Entity
     public class Estoque
     {
         public Guid Id { get; set; }
-        public Produto Produto   { get; set; }
+        public Produto Produto  { get; set; }
         public Guid    ProdutoId { get; set; }
         public Qualitativo InfoCompra { get; set; }
 

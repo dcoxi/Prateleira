@@ -1,2 +1,9 @@
 ﻿Para uso do swagger na aplicação, instalar o plugin:
  - Swashbuckle.AspNetCore
+
+Para implementação do padrão mediador, baixar no nuget:
+ - MediatR;
+ - MediatR.Extensions.Microsoft.DependencyInjection;
+
+ Pegar as classes do mediator para o ambiente local:
+  services.AddMediatR(Assembly.GetExecutingAssembly());
