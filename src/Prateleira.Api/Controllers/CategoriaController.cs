@@ -50,5 +50,25 @@ namespace Prateleira.Api.Controllers
             return Ok(resultado? MsgCategoria._200.StringFormat(createCategoryCommand.Descricao): "");
         }
 
+        [HttpPut]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Update(UpdateCategoryCommand updateCategoryCommand, CancellationToken cancellationToken)
+        {
+            var retorno = await _mediator.Send(updateCategoryCommand, cancellationToken)
+                                         .ConfigureAwait(false);
+           return Ok(retorno? MsgCategoria.MSG_Actualizacao.StringFormat(updateCategoryCommand.Descricao): "");
+        }
+
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Delete(DeleteCategoryCommand deleteCategory, CancellationToken cancellationToken)
+        {
+            var retorno = await _mediator.Send(deleteCategory, cancellationToken)
+                                         .ConfigureAwait(false);
+           return Ok(retorno? MsgCategoria.MSG_Rmover: "");
+        }
+
     }
 }

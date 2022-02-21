@@ -68,5 +68,23 @@ namespace Pratelerira.Infrastructure.Data.Mensagens {
                 return ResourceManager.GetString("200", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categoria {0}, actualizada com sucesso!.
+        /// </summary>
+        public static string MSG_Actualizacao {
+            get {
+                return ResourceManager.GetString("MSG_Actualizacao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categoria Removida com sucesso!.
+        /// </summary>
+        public static string MSG_Rmover {
+            get {
+                return ResourceManager.GetString("MSG_Rmover", resourceCulture);
+            }
+        }
     }
 }

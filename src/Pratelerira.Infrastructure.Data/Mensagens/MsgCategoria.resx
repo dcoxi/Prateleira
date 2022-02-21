@@ -120,4 +120,10 @@
   <data name="200" xml:space="preserve">
     <value>Categoria {0}, adicionada com sucesso!</value>
   </data>
+  <data name="MSG_Actualizacao" xml:space="preserve">
+    <value>Categoria {0}, actualizada com sucesso!</value>
+  </data>
+  <data name="MSG_Rmover" xml:space="preserve">
+    <value>Categoria Removida com sucesso!</value>
+  </data>
 </root>
