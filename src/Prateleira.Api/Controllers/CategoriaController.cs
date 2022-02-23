@@ -41,8 +41,8 @@ namespace Prateleira.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> novo(CreateCategoriaCommand createCategoryCommand, CancellationToken cancellationToken)
         {
-            if (!createCategoryCommand.validationResult.IsValid)
-                return BadRequest(createCategoryCommand.validationResult.Errors);
+            if (!createCategoryCommand.ValidationResult.IsValid)
+                return BadRequest(createCategoryCommand.ValidationResult.Errors);
 
             var resultado = await _mediator.Send(createCategoryCommand, cancellationToken)
                                            .ConfigureAwait(false);

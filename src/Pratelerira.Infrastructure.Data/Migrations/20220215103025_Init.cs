@@ -45,7 +45,7 @@ namespace Pratelerira.Infrastructure.Data.Migrations
                         name: "FK_CategoriaProduto_tb_categoria_Categoriasid",
                         column: x => x.Categoriasid,
                         principalTable: "tb_categoria",
-                        principalColumn: "id",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CategoriaProduto_tb_produto_ProdutosId",

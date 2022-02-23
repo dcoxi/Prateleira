@@ -38,10 +38,10 @@ namespace Pratelerira.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Prateleira.Domain.Entity.Categoria", b =>
                 {
-                    b.Property<Guid>("id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasColumnName("id");
+                        .HasColumnName("Id");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
@@ -49,7 +49,7 @@ namespace Pratelerira.Infrastructure.Data.Migrations
                         .HasColumnType("varchar(150)")
                         .HasColumnName("descricao");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("tb_categoria");
                 });

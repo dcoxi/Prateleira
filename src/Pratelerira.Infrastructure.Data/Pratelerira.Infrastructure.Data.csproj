@@ -19,12 +19,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MsgCategoria.resx</DependentUpon>
     </Compile>
+    <Compile Update="Mensagens\MsgProduto.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MsgProduto.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Mensagens\MsgCategoria.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MsgCategoria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Mensagens\MsgProduto.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MsgProduto.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

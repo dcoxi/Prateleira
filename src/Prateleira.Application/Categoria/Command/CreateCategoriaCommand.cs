@@ -15,12 +15,12 @@ namespace Prateleira.Application.Categoria.Command
         
         public string Descricao { get; set; }
         [JsonIgnore]
-        public ValidationResult validationResult { get; }
+        public ValidationResult ValidationResult { get; }
         public CreateCategoriaCommand(string descricao)
         {
             Descricao = descricao;
             var validator = new CreateCategoriaCommandValidator();
-            validationResult = validator.Validate(this);
+            ValidationResult = validator.Validate(this);
         }
     }
 }

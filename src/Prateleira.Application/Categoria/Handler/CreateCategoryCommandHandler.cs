@@ -21,7 +21,7 @@ namespace Prateleira.Application.Categoria.Handler
 
         public async Task<bool> Handle(CreateCategoriaCommand request, CancellationToken cancellationToken)
         {
-            if (!request.validationResult.IsValid)
+            if (!request.ValidationResult.IsValid)
                 return false;
             var categoria = new Domain.Entity.Categoria()
             {

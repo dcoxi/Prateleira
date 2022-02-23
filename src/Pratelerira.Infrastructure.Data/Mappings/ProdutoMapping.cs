@@ -18,7 +18,7 @@ namespace Prateleira.Infrastruture.Data.Mappings
                    .WithMany(p => p.Produtos);
 
             builder.Property(p => p.Descricao)
-                   .HasColumnName("id")
+                   .HasColumnName("Id")
                    .HasColumnType("uniqueidentifier")
                    .ValueGeneratedOnAdd()
                    .IsRequired();

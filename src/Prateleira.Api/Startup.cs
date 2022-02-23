@@ -28,13 +28,12 @@ namespace Prateleira.Api
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddNewtonsoftJson(opt =>
-                opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-
+             services.AddControllers().AddNewtonsoftJson(opt =>
+                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            
+            services.AddControllers();
             var assembly = AppDomain.CurrentDomain.Load("Prateleira.Application");
             services.AddMediatR(assembly);
-          
-            
             services.AddDataRegistration(_configuration);
 
             #region Swagger
